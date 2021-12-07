@@ -21,26 +21,30 @@ main{
     height:90vh;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 /*left*/
 .left{
     width: 40%;
     height: 100%;
+    max-height: 580px;
     position: relative;
+    background-position: center;
+    background-image: url("img/black.png");
+    background-size: cover;
 }
-#watch{
-    position: absolute;
-    height: 80%;
-}
+ 
 #watchWrapper{
     width: 200px;
     height: 225px;
     color: white;
     position: absolute;
-   top: 150px;
-   left: 50%;
-   transform: translateX(-100px);
+   top: 35%;
+ 
+   left: 54%;
+   transform: translateX(-50%);
    box-sizing: border-box;
    padding: 40px;
 }
@@ -120,6 +124,7 @@ main{
     border: none;
     margin-right: 10px;
     margin-top: 10px;
+    margin-bottom: 20px;
     border-radius: 5px;
     cursor: pointer;
     background-color: orange;
@@ -129,18 +134,8 @@ main{
        width: 100%;
     }
     .left{
-        width: 585px;
-    }
-}
-
-@media (max-width: 450px){
-     
-    .left{
-        width: 100vw;
+        width: 100%;
+        max-width: 580px;
         
     }
-    #watchWrapper{
-        left: 50%; 
-    }
-    
 }

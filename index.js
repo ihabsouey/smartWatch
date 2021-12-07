@@ -8,17 +8,23 @@ var btnRate = document.getElementById("btnRate")
 var time = document.getElementById("time")
 var heart = document.getElementById("heart")
 var beat = document.getElementById("beat")
+var left = document.getElementsByClassName("left");
+
 btnBlack.addEventListener("click",function(){
-   watch.src="img/black.png"
+   
+    left[0].style.backgroundImage ="url('img/black.png')"
 })
 btnBlue.addEventListener("click",function(){
-    watch.src="img/blue.png"
+ 
+   left[0].style.backgroundImage ="url('img/blue.png')"
 })
 btnPurple.addEventListener("click",function(){
-    watch.src="img/purple.png"
+
+    left[0].style.backgroundImage ="url('img/purple.png')"
 })
 btnRed.addEventListener("click",function(){
-    watch.src="img/red.png"
+    
+   left[0].style.backgroundImage ="url('img/red.png')"
 })
 
 btnTime.addEventListener("click",function(){
