@@ -69,6 +69,7 @@ main{
     display: none;
 }
 
+
 /*end left*/
 
 /*right*/
@@ -110,6 +111,9 @@ main{
     margin-top: 10px;
     border-radius: 5px;
     cursor: pointer;
+}
+.selected{
+    border: 2px solid rgba(255, 166, 0, 0.637);
 }
 .btnBuy{
     padding:10px 35px;

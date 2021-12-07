@@ -22,6 +22,9 @@ btnRed.addEventListener("click",function(){
 })
 
 btnTime.addEventListener("click",function(){
+    btnTime.classList.add("selected");
+    btnRate.classList.remove("selected");
+
     time.classList.add("show");
     time.classList.remove("hide");
 
@@ -32,6 +35,9 @@ btnTime.addEventListener("click",function(){
 
 })
 btnRate.addEventListener("click",function(){
+    btnRate.classList.add("selected");
+    btnTime.classList.remove("selected");
+
     time.classList.add("hide");
     time.classList.remove("show");
 
