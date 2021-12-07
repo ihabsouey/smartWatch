@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat' ,'Source Sans Pro';
+}
+header{
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    text-align: center;
+    z-index: 1;
+}
+#logo{
+    height: 100%;
+}
+
+main{
+    margin-top: 10vh;
+    height:90vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*left*/
+.left{
+    width: 40%;
+    height: 100%;
+    position: relative;
+}
+#watch{
+    position: absolute;
+    height: 80%;
+}
+#watchWrapper{
+    width: 200px;
+    height: 225px;
+    color: white;
+    position: absolute;
+   top: 150px;
+   left: 50%;
+   transform: translateX(-100px);
+   box-sizing: border-box;
+   padding: 40px;
+}
+#heart{
+    position: absolute;
+    bottom: 130px;
+    left: 35px;
+    width: 80px;
+}
+#beat{
+    position: absolute;
+    bottom: 80px;
+    left: 50px;
+     
+}
+#time{
+    position: absolute;
+    bottom: 120px;
+    left: 10px;
+}
+
+.show{
+    display: show;
+}
+.hide{
+    display: none;
+}
+
+/*end left*/
+
+/*right*/
+
+.right{
+    padding-top: 50px;
+    width: 55%;
+    margin-left: 25px;
+}
+.colors{
+    margin-top: 10px;
+}
+.btnC{
+    padding: 25px 35px;
+    border: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#btnBlack{
+    background-color: #23211f ;
+}
+#btnRed{
+    background-color: #ca3d22 ;
+}
+#btnBlue{
+    background-color: #565681 ;
+}
+#btnPurple{
+    background-color: #8a5362 ;
+}
+.features{
+    margin-top: 20px;
+}
+.btnF{
+    padding:10px 35px;
+    border: none;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btnBuy{
+    padding:10px 35px;
+    border: none;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: orange;
+}
+@media (max-width: 900px){
+    .right{
+       width: 100%;
+    }
+    .left{
+        width: 585px;
+    }
+}
+
+@media (max-width: 450px){
+     
+    .left{
+        width: 100vw;
+        
+    }
+    #watchWrapper{
+        left: 50%; 
+    }
+    
+}
